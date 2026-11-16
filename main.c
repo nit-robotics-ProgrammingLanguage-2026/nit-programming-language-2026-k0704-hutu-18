@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
 int calculateSum(int number) {
+    // static変数は関数が終了しても値が残る
     static int total = 0;
 
+    // 前回までの合計に今回の数値を加える
     total = total + number;
     return total;
 }
